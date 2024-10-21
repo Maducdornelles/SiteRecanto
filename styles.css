@@ -1,0 +1,143 @@
+/* Estilo básico para o site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Seção da home com imagem de fundo */
+.home {
+    height: 100vh;
+    background: url('assets/fundo.png') no-repeat center center;
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-attachment: fixed; /* A imagem de fundo não se move ao rolar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Escurece o fundo para legibilidade */
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 90%; /* Limita a largura do conteúdo */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo das seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: black; /* Muda o fundo para preto */
+    color: white; /* Texto branco para contraste */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção de Informações */
+.info {
+    padding: 30px;
+    border-radius: 10px; /* Arredondar bordas */
+}
+
+/* Estilo para o contêiner de informações */
+.info-container {
+    display: flex; /* Usar flexbox para dispor as colunas lado a lado */
+    justify-content: space-between; /* Espaçamento igual entre as colunas */
+    margin-top: 20px; /* Espaço acima das colunas */
+}
+
+/* Estilo para as colunas de informações */
+.info-column {
+    flex: 1; /* Cada coluna ocupa igual espaço */
+    margin: 0 10px; /* Margem horizontal entre as colunas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo branco com transparência para destacar sobre o preto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Aumentei a sombra para dar mais destaque */
+}
+
+h3 {
+    margin-bottom: 15px; /* Margem abaixo do título */
+}
+
+/* Estilo para os botões */
+.buttons {
+    display: flex; /* Usar flexbox para alinhar os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Margem acima dos botões */
+}
+
+.buttons .btn {
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    border-radius: 50%; /* Faz o botão circular */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semitransparente */
+    color: white; /* Cor do ícone */
+    display: flex; /* Permite alinhar o ícone */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 10px; /* Espaço entre os botões */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a cor de fundo e sombra */
+    text-decoration: none; /* Remove a linha de baixo do ícone */
+}
+
+.buttons .btn:hover {
+    background-color: #f8312f; /* Muda o fundo para um vermelho mais claro ao passar o mouse */
+    box-shadow: 0 4px 15px #f8312f; /* Sombra ao passar o mouse */
+}
+
+.buttons .btn:active {
+    background-color: #f8312f; /* Muda o fundo para um vermelho mais claro ao clicar */
+    box-shadow: 0 2px 10px #f8312f; /* Sombra ao clicar */
+}
+
+.buttons .btn i {
+    font-size: 24px; /* Tamanho do ícone */
+    line-height: 0; /* Remove a linha branca abaixo do ícone */
+}
+
+.gallery-container {
+    display: grid; /* Usar grid layout para a galeria */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaçamento entre as imagens */
+    max-width: 1200px; /* Largura máxima para a galeria */
+    margin: 0 auto; /* Centraliza a galeria na tela */
+}
+
+.gallery-item {
+    text-align: center; /* Centraliza o texto da descrição */
+}
+
+.gallery-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+.gallery-description {
+    margin-top: 10px; /* Espaço acima da descrição */
+    color: white; /* Cor do texto da descrição */
+    font-size: 1rem; /* Tamanho do texto da descrição */
+}
