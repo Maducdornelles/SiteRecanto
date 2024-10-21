@@ -141,3 +141,68 @@ h3 {
     color: white; /* Cor do texto da descrição */
     font-size: 1rem; /* Tamanho do texto da descrição */
 }
+
+/* Ajustes para tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+    /* Home Section */
+    .home {
+        background-size: contain; /* Ajusta a imagem de fundo para caber na tela */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+
+    .overlay {
+        padding: 30px; /* Reduz o espaçamento da caixa de texto */
+        max-width: 100%; /* Garante que ocupe a tela toda no mobile */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+    }
+
+    p {
+        font-size: 1.2rem; /* Texto menor */
+    }
+
+    /* Informações Section */
+    .info-container {
+        flex-direction: column; /* Colunas ficam uma embaixo da outra */
+        align-items: center; /* Centraliza as colunas */
+    }
+
+    .info-column {
+        margin-bottom: 20px; /* Espaço entre colunas */
+        width: 100%; /* Colunas ocupam toda a largura disponível */
+    }
+}
+
+/* Ajustes para celulares (largura máxima de 480px) */
+@media (max-width: 480px) {
+    /* Home Section */
+    .home {
+        background-size: cover; /* Cobrir o fundo */
+        height: auto; /* Deixa a altura ajustável */
+        padding: 15px;
+    }
+
+    .overlay {
+        padding: 20px; /* Reduz ainda mais o espaçamento */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamanho menor para título */
+    }
+
+    p {
+        font-size: 1rem; /* Reduz tamanho do texto */
+    }
+
+    /* Informações Section */
+    .info-container {
+        flex-direction: column; /* Colunas ficam empilhadas */
+    }
+
+    .info-column {
+        width: 100%; /* Cada coluna ocupa a tela toda */
+        padding: 15px;
+    }
+}
